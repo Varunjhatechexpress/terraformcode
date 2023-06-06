@@ -1,0 +1,23 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Sid": "new statement",
+        "Effect": "Allow",
+        "Principal": {
+          "AWS": "arn:aws:iam::046234244112:role/service-role/codebuild-Infineon-devops-docker-ECR-EKS-service-role"
+        },
+        "Action": [
+          "ecr:BatchDeleteImage",
+          "ecr:BatchGetImage",
+          "ecr:DeleteRepository",
+          "ecr:DescribeImages",
+          "ecr:ListImages",
+          "ecr:PutImage",
+          "ecr:PutLifecyclePolicy",
+          "ecr:SetRepositoryPolicy",
+          "ecr:UploadLayerPart"
+        ]
+      }
+    ]
+  }

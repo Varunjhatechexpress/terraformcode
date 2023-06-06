@@ -1,0 +1,6 @@
+stream                = "ipms"
+deploy_environment    = "stagging"
+aws_account           = "565604140614"
+aws_region            =  "us-east-1"
+vpc_id                = "vpc-04cd16e9c52b23d2f"
+#deployment_type       = "terraform"
