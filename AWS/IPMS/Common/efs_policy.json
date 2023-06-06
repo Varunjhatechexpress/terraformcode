@@ -1,0 +1,36 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowReadWriteAccess",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "*"
+                    
+                ]
+            },
+            "Action": [
+                "elasticfilesystem:ClientMount",
+                "elasticfilesystem:ClientWrite",
+                "elasticfilesystem:ClientRootAccess"
+            ],
+            "Resource": "*"
+           
+        },
+        {
+            "Sid": "AllowReadOnlyAccess",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "*"
+                ]
+            },
+            "Action": [
+                "elasticfilesystem:ClientMount",
+                "elasticfilesystem:ClientRead"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
